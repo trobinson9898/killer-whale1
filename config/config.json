@@ -1,0 +1,32 @@
+{
+    "mode": "dynamic",
+    "thresholds": {
+        "V_high": 0.8,
+        "V_low": 0.3,
+        "T_trend": 0.6,
+        "L_min": 1000,
+        "W_spike": 0.7,
+        "hysteresis_seconds": 180
+    },
+    "risk": {
+        "max_risk_per_trade_pct": 1.0,
+        "max_open_trades": 6,
+        "per_token_cap_pct": 5.0,
+        "emergency_drawdown_pct_24h": 8.0,
+        "slippage_cap_pct": 2.5
+    },
+    "feeds": {
+        "dexscreener": {
+            "enabled": true,
+            "poll_interval_seconds": 5
+        },
+        "geckoterminal": {
+            "enabled": true,
+            "poll_interval_seconds": 7
+        }
+    },
+    "execution": {
+        "dry_run": true,
+        "ttl_seconds": 45
+    }
+}
